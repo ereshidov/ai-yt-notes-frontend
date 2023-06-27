@@ -1,19 +1,14 @@
-import React from 'react'
-import clsx from 'clsx'
+import React from "react";
+import clsx from "clsx";
 
-import {
-  Title,
-  Description,
-  ThumbnailImage,
-  GetNotesFromNextVideoButton
-} from './components'
+import { Title, Description, ThumbnailImage } from "./components";
 
-import styles from './Summary.module.css'
+import styles from "./Summary.module.css";
 
 interface Props {
-  thumbnail: React.ReactNode
-  title: React.ReactNode
-  description: React.ReactNode
+  thumbnail: React.ReactNode;
+  title: React.ReactNode;
+  description: React.ReactNode;
 }
 
 export const Summary = ({ description, thumbnail, title }: Props) => {
@@ -27,10 +22,9 @@ export const Summary = ({ description, thumbnail, title }: Props) => {
         </div>
       </div>
     </article>
-  )
-}
+  );
+};
 
-Summary.Title = Title
-Summary.Description = Description
-Summary.ThumbnailImage = ThumbnailImage
-Summary.GetNotesFromNextVideoButton = GetNotesFromNextVideoButton
+Summary.Title = Title;
+Summary.Description = Description;
+Summary.ThumbnailImage = ThumbnailImage;
