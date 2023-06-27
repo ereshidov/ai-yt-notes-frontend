@@ -1,0 +1,16 @@
+{
+  "extends": "next/core-web-vitals",
+  "overrides": [
+    {
+      "files":["*.ts", "*.tsx"],
+      "rules": {
+        "no-restricted-imports":["error",{
+          "name":"@mui/material",
+          "importNames":["Skeleton"],
+          "message": "Please use Skeleton component from ~/shared/ui directory"
+
+        }]
+      }
+    }
+  ]
+}

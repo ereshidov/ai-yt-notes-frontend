@@ -1,0 +1,10 @@
+query YoutubeVideoSummary($videoId: String!) {
+  youtubeVideoSummary(videoId: $videoId) {
+    video {
+      captions
+      title
+      thumbnailUrl
+    }
+    aiSummary
+  }
+}

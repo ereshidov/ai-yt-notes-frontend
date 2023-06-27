@@ -1,0 +1,13 @@
+.root {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
